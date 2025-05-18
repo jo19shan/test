@@ -31,3 +31,13 @@ function runAway() {
   // Show angry message
   message.classList.add("visible");
 }
+window.addEventListener("click", () => {
+const music = document.getElementById("bgMusic");
+if (music && music.paused) {
+music.play();
+}
+});
+
+window.onload = () => {
+typeText();
+};
